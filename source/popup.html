@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--
+    <style>
+        body {width:200px;}
+    </style>
+    -->
+    <script type="text/javascript" src="jquery-1.11.0.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="popup.js" charset="UTF-8"></script>
+    <title>spring</title>
+  </head>
+
+<body>
+<div id="check_div">
+    <div>
+        <label for="time_interval">选择刷新时间间隔(秒)</label>
+        <input id="time_interval" type="text" value="" placeholder="太频繁可能被封IP，建议>5min" />
+    </div>
+    选择约车时间：
+    <table id="check_table">
+        <tr>
+            <td>
+                <input type="text" placeholder="日期格式：20150328" value="" class="check_date" />
+            </td>
+            <td>
+                <select class="check_time">
+                    <option value ="812">上午</option>
+                    <option value ="15">下午</option>
+                    <option value="58">晚上</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="check_info">
+    正在刷新 <br/>
+</div>
+<input type="button" value="添加时间" id="add_check"/>
+<input type="button" value="开始刷新" id="start_refresh"/>
+<input type="button" value="停止刷新" id="stop_refresh"/>
+
+</body>
+</html>
