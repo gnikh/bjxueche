@@ -1,0 +1,26 @@
+﻿{
+    "name": "yuanda",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "yuanda",
+    "permissions": [
+      "tabs",
+      "cookies",
+      "http://yuanda.bjxueche.net/*",
+      "notifications",
+      "background"
+    ],
+    "content_scripts": [
+        {
+          "matches": ["http://yuanda.bjxueche.net/ych2.aspx"],
+          "js": ["jquery-1.11.0.min.js", "myscript.js"]
+        }
+    ],
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    }
+}
